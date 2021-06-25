@@ -1,1 +1,276 @@
-/* No CSS */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.header::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+}
+
+.header .container {
+  max-width: 1032px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header .container .header__body {
+  position: relative;
+  z-index: 2;
+}
+
+.header .container .header__body .header__burger {
+  display: none;
+}
+
+.header .container .header__body .header__menu .header__list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .container .header__body .header__menu .header__list .header__link {
+  margin-left: 75px;
+  font-family: Heebo, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.header .container .header__body .header__menu .header__list .header__link a {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .header .container .header__body .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header .container .header__body .header__burger ::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+  }
+  .header .container .header__body .header__burger ::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.content {
+  max-width: 855px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.content .header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.content .header__main .main__resume {
+  min-width: 506px;
+}
+
+.content .header__main .main__resume h1 {
+  min-width: 506px;
+  font-family: Heebo, sans-serif;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 60px;
+  color: #212432;
+}
+
+.content .header__main .main__resume p {
+  margin: 40px 0;
+  max-width: 497px;
+  font-family: Heebo, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243D;
+}
+
+.content .header__main .main__resume button {
+  background: #FF6464;
+  font-family: Heebo, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+}
+
+.content .header__main .main__resume button:hover {
+  background: #fd4c4c;
+}
+
+.content .header__main .main__resume button:focus {
+  background: #fa3636;
+}
+
+.content .header__main .main__photo {
+  min-width: 243px;
+}
+
+.post {
+  margin-top: 70px;
+  padding: 0 10px 32px 0;
+  background: #EDF7FA;
+}
+
+.post .post__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post .post__row h5 {
+  font-family: Heebo, sans-serif;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.post .post__row a {
+  text-decoration: none;
+  font-family: Heebo, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #00A8CC;
+}
+
+.post .post__block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post .post__block .block__left, .post .post__block .block__right {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 410px;
+  padding: 20px;
+}
+
+.post .post__block .block__left h4, .post .post__block .block__right h4 {
+  font-family: Heebo, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
+  color: #21243D;
+}
+
+.post .post__block .block__left .autor, .post .post__block .block__right .autor {
+  font-family: Heebo, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+}
+
+.post .post__block .block__left p, .post .post__block .block__right p {
+  font-family: Heebo, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243D;
+}
+
+.works {
+  margin-bottom: 100px;
+}
+
+.works .works__row {
+  max-width: 855px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.works .works__row .row__picture img {
+  margin: 20px 20px 20px 0;
+}
+
+.works .works__row .row__desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.works .works__row .row__desc h3 {
+  margin: 0 0 15px 0;
+  font-family: Heebo, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+}
+
+.works .works__row .row__desc .subtitle {
+  margin: 0 0 15px 0;
+  font-family: Heebo, sans-serif;
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695A4;
+}
+
+.works .works__row .row__desc .subtitle span {
+  margin-right: 25px;
+  padding: 0 10px;
+  background: #142850;
+  border-radius: 16px;
+  font-family: Heebo, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.works .works__row .row__desc .text {
+  margin: 0;
+  font-family: Heebo, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243D;
+}
+
+.messenger {
+  text-align: center;
+}
+
+.messenger img {
+  margin: 0 17px 26px 0;
+}
+
+.copyright {
+  margin: 0 0 50px 0;
+  text-align: center;
+  font-family: Heebo, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #21243D;
+}

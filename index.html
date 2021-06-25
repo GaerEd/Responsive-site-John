@@ -6,11 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header"></header>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__link"><a href="">Works</a></li>
+                            <li class="header__link"><a href="">Blog</a></li>
+                            <li class="header__link"><a href="">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="content">
+        <div class="header__main">
+            <div class="main__resume">
+                <h1>Hi, I am John, <br> Creative Technologist</h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button>Download Resume</button>
+            </div>
+            <div class="main__photo">
+                <img src="img/mainphoto.png" alt="#">
+            </div>
+        </div>
+        <div class="post">
+            <div class="post__row">
+                <h5>Recent posts</h5>
+                <a href="">View all</a>
+            </div>
+            <div class="post__block">
+                <div class="block__left">
+                    <h4>Making a design system from scratch</h4>
+                    <p class="autor">12 Feb 2020 | Design, Pattern</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+                <div class="block__right">
+                    <h4>Creating pixel perfect icons in Figma</h4>
+                    <p class="autor">12 Feb 2020 | Figma, Icon Design</p>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+        <div class="works">
+            <div class="works__row"><h4>Featured works</h4></div>
+            <div class="works__row">
+                <div class="row__picture"><img src="img/Rectangle 30.png" alt="#"></div>
+                <div class="row__desc">
+                    <h3>Designing Dashboards</h3>
+                    <p class="subtitle"><span>2020</span>Dashboard</p>
+                    <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class="works__row">
+                <div class="row__picture"><img src="img/Rectangle 32.png" alt="#"></div>
+                <div class="row__desc">
+                    <h3>Vibrant Portraits of 2020</h3>
+                    <p class="subtitle"><span>2018</span>Illustration</p>
+                    <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+            <div class="works__row">
+                <div class="row__picture"><img src="img/Rectangle 34.png" alt="#"></div>
+                <div class="row__desc">
+                    <h3>36 Days of Malayalam type</h3>
+                    <p class="subtitle"><span>2018</span>Typography</p>
+                    <p class="text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="messenger">
+                <img src="icon/fb.svg" alt="#">
+                <img src="icon/insta.svg" alt="#">
+                <img src="icon/Group.svg" alt="#">
+                <img src="icon/Linkedin.svg" alt="#">
+            </div>
+            <p class="copyright">Copyright ©2020 All rights reserved </p>
+        </footer>
+    </section>
 
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
