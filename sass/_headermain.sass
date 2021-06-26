@@ -40,3 +40,54 @@
                     background: #fa3636
         & .main__photo
             min-width: 243px
+
+@media screen and ( max-width: 768px )
+    .content
+        max-width: 855px
+        margin: 0 auto
+        margin-top: 80px
+        & .header__main
+            display: flex
+            padding: 0 10px
+            flex-direction: column
+            align-items: center
+            & .main__resume
+                padding: 0 10px
+                max-width: 340pxpx
+                display: flex
+                flex-direction: column
+                align-items: center
+                order: 1
+                & h1
+                    max-width: 312px
+                    font-family: Heebo, sans-serif
+                    font-weight: bold
+                    font-size: 44px
+                    line-height: 60px
+                    color: #212432
+                    text-align: center
+                & p
+                    margin: 40px 0
+                    max-width: 328px
+                    font-family: Heebo, sans-serif
+                    font-size: 16px
+                    line-height: 23px
+                    color: #21243D
+                    text-align: center
+                & button
+                    background: #FF6464
+                    font-family: Heebo, sans-serif
+                    font-weight: 500
+                    font-size: 20px
+                    line-height: 29px
+                    color: #FFFFFF
+                    padding: 10px 20px
+                    border-radius: 5px
+                    cursor: pointer
+                    border: 0
+                    &:hover
+                        background: #fd4c4c
+                    &:focus
+                        background: #fa3636
+            & .main__photo
+                max-width: 243px
