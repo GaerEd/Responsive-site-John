@@ -43,23 +43,23 @@
 
 @media screen and ( max-width: 768px )
     .content
-        max-width: 855px
+        max-width: 100%
         margin: 0 auto
         margin-top: 80px
+        padding: 0 50px
         & .header__main
             display: flex
-            padding: 0 10px
             flex-direction: column
             align-items: center
             & .main__resume
-                padding: 0 10px
-                max-width: 340pxpx
+                max-width: 100%
                 display: flex
                 flex-direction: column
                 align-items: center
                 order: 1
                 & h1
-                    max-width: 312px
+                    min-width: 100%
+                    margin: 30px 40px
                     font-family: Heebo, sans-serif
                     font-weight: bold
                     font-size: 44px
@@ -67,8 +67,8 @@
                     color: #212432
                     text-align: center
                 & p
-                    margin: 40px 0
-                    max-width: 328px
+                    max-width: 100%
+                    margin: 40px 40px
                     font-family: Heebo, sans-serif
                     font-size: 16px
                     line-height: 23px
@@ -90,4 +90,4 @@
                     &:focus
                         background: #fa3636
             & .main__photo
-                max-width: 243px
+                max-width: 100%

@@ -63,7 +63,6 @@
     justify-content: flex-end;
   }
   .header .container .header__body .header__burger {
-    margin: 0 5% 0 0;
     display: block;
     position: relative;
     width: 30px;
@@ -196,26 +195,26 @@
 
 @media screen and (max-width: 768px) {
   .content {
-    max-width: 855px;
+    max-width: 100%;
     margin: 0 auto;
     margin-top: 80px;
+    padding: 0 50px;
   }
   .content .header__main {
     display: flex;
-    padding: 0 10px;
     flex-direction: column;
     align-items: center;
   }
   .content .header__main .main__resume {
-    padding: 0 10px;
-    max-width: 340pxpx;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     order: 1;
   }
   .content .header__main .main__resume h1 {
-    max-width: 312px;
+    min-width: 100%;
+    margin: 30px 40px;
     font-family: Heebo, sans-serif;
     font-weight: bold;
     font-size: 44px;
@@ -224,8 +223,8 @@
     text-align: center;
   }
   .content .header__main .main__resume p {
-    margin: 40px 0;
-    max-width: 328px;
+    max-width: 100%;
+    margin: 40px 40px;
     font-family: Heebo, sans-serif;
     font-size: 16px;
     line-height: 23px;
@@ -251,7 +250,7 @@
     background: #fa3636;
   }
   .content .header__main .main__photo {
-    max-width: 243px;
+    max-width: 100%;
   }
 }
 
@@ -337,11 +336,7 @@
     color: #21243D;
   }
   .post .post__row a {
-    text-decoration: none;
-    font-family: Heebo, sans-serif;
-    font-size: 16px;
-    line-height: 23px;
-    color: #00A8CC;
+    display: none;
   }
   .post .post__block {
     display: flex;
@@ -349,12 +344,12 @@
     align-items: center;
   }
   .post .post__block .block__left, .post .post__block .block__right {
+    max-width: 620px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
     border-radius: 4px;
     box-sizing: border-box;
-    max-width: 410px;
-    padding: 20px;
+    margin: 5px;
   }
   .post .post__block .block__left h4, .post .post__block .block__right h4 {
     font-family: Heebo, sans-serif;
@@ -464,8 +459,8 @@
     font-size: 22px;
   }
   .works .works__row {
+    margin: 20px;
     padding: 0 10px;
-    max-width: 344px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -479,7 +474,8 @@
     color: #21243D;
   }
   .works .works__row .row__picture img {
-    margin: 20px 20px 20px 0;
+    width: 100%;
+    padding: 5px;
   }
   .works .works__row .row__desc {
     display: flex;
